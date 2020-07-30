@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/characterList">
 
+    <fragment
+        android:id="@+id/characterList"
+        android:name="com.example.android.rickandmorty.ui.character.CharacterList"
+        android:label="Characters"
+        tools:layout="@layout/character_fragment" />
 </navigation>
