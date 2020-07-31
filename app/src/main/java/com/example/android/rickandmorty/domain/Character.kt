@@ -1,7 +1,5 @@
 package com.example.android.rickandmorty.domain
 
-import com.example.android.rickandmorty.database.LocationObject
-
 /**
  * Domain objects are plain Kotlin data classes that represent the things in our app. These are the
  * objects that should be displayed on screen, or manipulated by the app.
@@ -20,8 +18,6 @@ data class Character(
     var species: String,
     var type: String,
     var gender: String,
-    var origin: LocationObject,
-    var location: LocationObject,
     var image: String,
     var url: String,
     var created: String
