@@ -8,11 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.android.rickandmorty.R
 
-class CharacterList : Fragment() {
+class CharacterListFragment : Fragment() {
 
     companion object {
         fun newInstance() =
-            CharacterList()
+            CharacterListFragment()
     }
 
     private lateinit var viewModel: CharacterListViewModel
@@ -21,7 +21,9 @@ class CharacterList : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.character_fragment, container, false)
+        val binding = CharacterListFragmentBinding.inflate(inflater)
+
+        return inflater.inflate(R.layout.characterList_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

@@ -24,7 +24,8 @@ var retrofit: Retrofit = Retrofit.Builder()
 
 interface Service {
     @GET("character")
-    fun getCharactersAsync()
+    fun getCharactersAsync():
+            Deferred<NetworkCharacterContainer>
 }
 
 object Api {

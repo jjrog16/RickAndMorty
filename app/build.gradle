@@ -5,6 +5,9 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
+    dataBinding{
+        enabled = true
+    }
     buildToolsVersion "30.0.1"
 
     defaultConfig {
